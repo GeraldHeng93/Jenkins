@@ -1,0 +1,32 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/First job
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/First job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/GeraldHeng93/Jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/GeraldHeng93/Jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/GeraldHeng93/Jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 9d71032d5022b6600d310cd15d8ff748dd421d73 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9d71032d5022b6600d310cd15d8ff748dd421d73 # timeout=10
+Commit message: "Update Fizzbuzz.py"
+ > git rev-list --no-walk 9d71032d5022b6600d310cd15d8ff748dd421d73 # timeout=10
+[First job] $ /bin/sh -xe /tmp/jenkins5986773074873236169.sh
++ python3 Fizzbuzz.py
+fizz buzz
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+TRADITION
+Finished: SUCCESS
